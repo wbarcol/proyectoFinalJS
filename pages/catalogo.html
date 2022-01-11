@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByV Bikestore - Compras</title>
+    <meta name="description" content="Acá podrás comprar respuesto y accesorios de bicicletas">
+    <meta name="keywords" content="bicicleta, manubrio, bici, cadena, pedal, compra">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel&family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Estonia&display=swap" rel="stylesheet">
+
+
+<link rel="shortcut icon" href="logo.png">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body class="principal">
+    <header class="headerPage">
+        <div class="barra">
+            <div class="logo">
+                <h1>BYV Bikestore</h1>
+            </div>
+            <div>
+            <i id="botonMenu" class="fas fa-bars"></i>
+            </div>
+            <div id="menuDeNav" class="menuDeNav">
+                <nav class="navPage">
+                    <ul id="listaMenu" class="ulmenu">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="catalogo.html">Comprar</a></li>
+                        <li><a href="tutoriales.html">Tutoriales</a></li>
+                        <li><a href="testimonios.html">Clientes</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+<div class="bannerPrincipal">
+</div>
+
+<main class="mainProductos">
+<section class="containerProductos" id="containerProductoss">
+</section>
+
+
+<section class="principalCarrito">
+    <div > </div>
+    <div class="carritoCompra">
+    <div id="carritoIcono"> <i class="fas fa-shopping-cart fa-2x"></i> </div>
+        <div id="mostrarCarritoVacio"><h5>CARRITO VACIO</h5></div>
+        <div id="mostrarManubrio"></div>
+        <div id="mostrarAsiento"></div>
+        <div id="mostrarCaucho Taco"></div>
+        <div id="mostrarPedal grande"></div>
+    </div>
+</section>
+
+<section class="finalizarCompra">
+<div id="muestraCompra">
+    <button type="button" id= btnComprar2 class="btn_continuar btn btn-warning">CONTINUAR</a> </button>
+    <h5 id="mensajeAlerta">Agregar productos para continuar</h5>
+</div>
+</section>
+</main>
+
+<!-- FORMULARIO -->
+
+<div class="main__formulario">
+    <h5>DATOS DEL CLIENTE</h5>
+<form action="" class="formulario" id="formulario">
+
+    <!-- Grupo: Nombre -->
+<div class="formulario__grupo" id="grupo__nombre">
+    <label for="nombre" class="formulario__label">Nombre</label>
+    <div class="formulario__grupo-input">
+        <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Solo letras">
+        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+    </div>
+        <p class="formulario__input-error">No se permiten números ni signos</p>
+</div>
+
+
+    <!-- Grupo: Apellido -->
+    <div class="formulario__grupo" id="grupo__apellido">
+        <label for="apellido" class="formulario__label">Apellido</label>
+        <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Solo letras">
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </div>
+            <p class="formulario__input-error">No se permiten números ni signos</p>
+    </div>
+
+            <!-- Grupo: DNI -->
+            <div class="formulario__grupo" id="grupo__DNI">
+                <label for="DNI" class="formulario__label">DNI</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="DNI" id="DNI" placeholder="Solo números sin espacios">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                    <p class="formulario__input-error">Solo puede contener números y un máximo de 08 digitos</p>
+            </div>
+
+
+                <!-- Grupo: Telefono -->
+    <div class="formulario__grupo" id="grupo__telefono">
+        <label for="telefono" class="formulario__label">Teléfono</label>
+        <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="Solo números sin espacios">
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </div>
+            <p class="formulario__input-error">Solo puede contener números y un máximo de 10 digitos</p>
+    </div>
+
+
+        <!-- Grupo: Correo -->
+        <div class="formulario__grupo" id="grupo__correo">
+            <label for="correo" class="formulario__label">E-mail</label>
+            <div class="formulario__grupo-input">
+                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="example@example.com">
+                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+                <p class="formulario__input-error">El correo solo puede contener letras, números, puntos, guiones y guión bajo</p>
+        </div>
+
+
+
+    <!-- Grupo: Direccion -->
+    <div class="formulario__grupo" id="grupo__direccion">
+        <label for="direccion" class="formulario__label">Dirección</label>
+        <div class="formulario__grupo-input">
+            <input type="text" class="formulario__input" name="direccion" id="direccion" placeholder="Ingresar dirección">
+            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+        </div>
+            <p class="formulario__input-error">Ingresar Dirección</p>
+    </div>
+
+    <div class="formulario__mensaje" id="formulario__mensaje">
+        <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Verificar los datos ingresados</p>
+    </div>
+
+    <div class="formulario__grupo formulario__grupo-btn-enviar">
+<button type="submit" class="formulario__btn">Finalizar compra</button>
+    </div>
+
+</form>
+</div>
+
+<section class="volverAComprar">
+<div class="compraFinal">
+    <div > </div>
+    <div class="carritoFinal">
+    <div id="iconoCheck"> <i class="fas fa-check-square fa-2x"></i></div>
+        <div id="mensajeFinal">
+        <div class="cantidadFinal"></div>
+        <div class="productoFinal"></div>
+        <div class="totalFinal"></div>
+        </div>
+    </div>
+</div>
+
+    <div id="retornarACompra">
+        <button type="button" id= btnVolver class="btn_volver btn btn-warning"> <a href="catalogo.html">REALIZAR OTRA COMPRA</a> </button>
+    </div>
+</section>
+
+
+        <div class="footerPrincipal">
+            <footer>
+                <a href="https://www.instagram.com/byv_bikestore/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+            </footer>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
+        <script src="../javascript/maincatalogo.js" defer></script>
+        <script src="../javascript/menu.js" defer></script>
+
+</body>
+</html>

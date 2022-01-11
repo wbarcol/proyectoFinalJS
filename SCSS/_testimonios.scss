@@ -1,0 +1,53 @@
+/* Testomonios */
+
+.mainTestimonios{
+    padding: 20px;
+  }
+  
+  .testimonio{
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr;
+  }
+  
+  .testimonio img{
+  width: 100%;
+  height: 250px;
+  }
+  
+  .containerTestimonios{
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-gap: 10px;
+  justify-content: center;
+  }
+  
+  .testimonioDescripcion{
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  }
+  
+  .iconoTesti{
+    display: block;
+    margin: 10px 0;
+  }
+  
+  @media (max-width: 991px){
+    .containerTestimonios{
+      grid-template-columns: repeat(2, 300px);
+  
+      }
+  
+  
+  }
+  
+  @media (max-width: 767px){
+    .containerTestimonios{
+      grid-template-columns: repeat(1, 300px);
+  
+      }
+  }

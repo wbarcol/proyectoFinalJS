@@ -1,0 +1,33 @@
+/* TUTORIALES */
+
+.tutoriales{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-items: center; 
+  }
+  
+  
+  .tutorial{
+   text-align: center;
+  }
+  
+  .tituloTutoriales{
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  
+  @media (max-width: 767px){
+    .tutoriales{
+      grid-template-columns: 1fr;
+    }
+  
+  .videoYoutube{
+    width: 300px;
+    height: 210px;
+  }
+  }

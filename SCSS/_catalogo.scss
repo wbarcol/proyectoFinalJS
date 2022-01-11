@@ -1,0 +1,343 @@
+      /* COMPRAS/CATALOGO */
+
+      .mainProductos{
+        padding: 20px;
+      }
+
+      .bannerPrincipal {
+        background-image: url(../imag/banner.jpg);
+        width: 100%;
+        height: 300px;
+          background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+      }
+
+.producto{
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+.producto img{
+  width: 100%;
+  height: 200px;
+}
+
+.containerProductos{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+.productoTitulo{
+  text-align: center;
+  font-size: 20px;
+}
+
+.productoPrecio{
+  color: #ffc107;
+  font-weight: bold;
+
+}
+
+.iconoCarrito{
+  display: block;
+  margin: 10px 0;
+}
+
+
+#muestraCompra{
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+.carritoCompra{
+  padding: 50px;
+  text-align: center;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  background-color:silver;
+
+}
+
+.btn_continuar{
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+
+.iconoCarrito {
+cursor: pointer;
+}
+
+.principalCarrito {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+
+#mostrarCarritoVacio{
+  display: none;
+}
+
+
+#mensajeAlerta{
+  display: none;
+}
+
+
+@media (max-width: 991px){
+  .containerProductos{
+    grid-template-columns: repeat(2, 300px);
+  }
+
+  .principalCarrito {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px){
+  .containerProductos{
+    grid-template-columns: repeat(1, 300px);
+  }
+
+  .principalCarrito {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* formulario */
+
+
+
+.main__formulario{
+  display: none;
+  max-width: 800px;
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 40px;
+  font-family: "Nunito", sans-serif;
+  background-color:silver;
+   }
+
+.main__formulario h5{
+  text-align: center;
+}
+
+.formulario{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.formulario__label{
+  display: block;
+  font-weight: 700;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.formulario__grupo-input{
+position: relative;
+}
+
+.formulario__input{
+  width: 100%;
+  background-color: #FFF;
+  border: 3px solid transparent;
+  border-radius: 3px;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 40px 0 10px;
+  transition: .3s ease all;
+}
+
+.formulario__input:focus{
+border: 3px solid #0075FF;
+outline: none;
+box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error{
+  font-size: 12px;
+  margin-bottom: 0;
+  display: none;
+}
+
+.formulario__input-error-activo{
+display: block;
+}
+
+.formulario__validacion-estado{
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+  z-index: 100;
+  font-size: 16px;
+  opacity: 0;
+}
+
+.formulario__mensaje,
+.formulario__grupo-btn-enviar{
+  grid-column: span 2;
+}
+
+
+.formulario__mensaje{
+ height: 45px;
+ line-height: 45px;
+ background: #f66060;
+ padding: 0 15px;
+ border-radius: 3px;
+ display: none;
+}
+
+.formulario__mensaje-activo{
+  display: block;
+}
+
+.formulario__grupo-btn-enviar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulario__btn {
+  height:45px;
+  line-height: 45px;
+  width: 30%;
+  background: black;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: .1s ease all;
+}
+
+.formulario__btn:hover {
+ box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+}
+
+/* Validacion */
+
+.formulario__grupo-correcto .formulario__validacion-estado {
+  color: #1ed12d;
+  opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+  color: #bb2929;
+  opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+  color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+  border: 3px solid #bb2929;
+}
+
+@media screen and (max-width: 800px) {
+  .formulario{
+    grid-template-columns: 1fr; 
+  }
+
+  .formulario__mensaje,
+.formulario__grupo-btn-enviar{
+  grid-column: span 1;
+}
+
+.formulario__btn {
+  width: 100%;
+}
+
+.formulario{
+  font-size: 12px;
+ }
+}
+
+/* COMPRA FINAL */
+
+.volverAComprar{
+  display: none;
+}
+
+
+.compraFinal {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.carritoFinal{
+  padding: 50px;
+  text-align: center;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  background-color:silver;
+
+}
+
+#retornarACompra{
+  padding: 20px;
+  text-align: center;
+}
+
+.btn_volver{
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.btn_volver a {
+
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  display: block;
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  cursor: pointer; }
+
+#mensajeFinal{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+
+@media (max-width: 991px){
+  .compraFinal {
+    grid-template-columns: 1fr;
+  }
+
+  .volverAComprar {
+    font-size: 15px;
+  }
+
+
+}
+
+@media (max-width: 767px){
+  .compraFinal {
+    grid-template-columns: 1fr;
+  }
+
+  .volverAComprar {
+    font-size: 12px;
+  }
+}
+

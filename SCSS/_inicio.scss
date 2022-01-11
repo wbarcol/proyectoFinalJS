@@ -1,0 +1,135 @@
+/* INICIO */
+
+.vistaInicial {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100vh;
+  align-items:flex-end;
+  justify-items:end; 
+background-image: url(../imag/portada.jpg);
+background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.btnComprar {
+padding: 30px;
+border-bottom: 70px;
+}
+
+.btnComprar a {
+
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  display: block;
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  cursor: pointer; }
+
+
+
+      .caracteristicas {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 200px;
+      align-items: center;
+      justify-items: center; 
+
+    }
+
+    .caract {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center; 
+  }
+
+  .caract h3{
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+
+}
+
+.servicios {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 800px;
+align-items: center;
+justify-items: center; 
+}
+
+#repServ {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 800px;
+align-items: center;
+justify-items: center;
+background-image: url(../imag/re.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+width: 100%;
+height: 100%;
+}
+
+.servRep h3{
+  color: white;
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+
+}
+
+#repAcc {
+  display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 800px;
+align-items: center;
+justify-items: center;
+  background-image: url(../imag/ac.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  }
+
+  .servAcc h3{
+    color: white;
+    font-size: 40px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+  
+  }
+
+  #tituloRe{
+    display: none;
+  }
+
+  #tituloAcc{
+    display: none;
+  }
+
+  @media (max-width: 991px){
+    .servicios {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+    }
+  }
+  
+  @media (max-width: 767px){
+    .servicios {
+      display: none;
+    }
+  }
