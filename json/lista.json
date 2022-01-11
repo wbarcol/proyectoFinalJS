@@ -1,37 +1,37 @@
 [
-{
+  {
     "nombre": "Testimonio 1",
     "testimonio": "Necesitaba cambiar varias cosas de mi bici, comencé a buscar tiendas y los conocí por instagram. Hice varias consultas me ayudaron y orientaron.",
     "imagen": "../imag/testi1.png"
-},
+  },
 
-{
+  {
     "nombre": "Testimonio 2",
     "testimonio": "Mi mejor amiga ya había comprado, me los recomendó. Quedé encantada cuando compre y ya esta es mi segunda compra",
     "imagen": "../imag/testi2.png"
-},
+  },
 
-{
+  {
     "nombre": "Testimonio 3",
     "testimonio": "Estuve varios días viendo tiendas y sin duda fueron los mejores precios que encontré y repuestos de calidad",
     "imagen": "../imag/testi3.png"
-},
+  },
 
-{
+  {
     "nombre": "Testimonio 4",
     "testimonio": "Tenía varios días buscando repuestos y donde encontré todo lo que necesitaba fue con ustedes",
     "imagen": "../imag/testi4.png"
-},
+  },
 
-{
+  {
     "nombre": "Testimonio 5",
     "testimonio": "Me gustó todo, los precios, la calidad de las marcas pero lo que mas me gustó que la entrega fue super rápida",
     "imagen": "../imag/testi5.png"
-},
+  },
 
-{
+  {
     "nombre": "Testimonio 6",
     "testimonio": "Ya había ido a varias tiendas fisicas y no encontraba lo que necesitaba, luego mi hijo me los recomendó y me ayudo a comprar.",
     "imagen": "../imag/testi6.png"
-}
+  }
 ]

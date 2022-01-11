@@ -1,11 +1,7 @@
-let urlTesti = "../json/lista.json"
-
+let urlTesti = "../json/lista.json";
 
 $.getJSON(urlTesti, function (datos) {
-
-for (let testimonio of datos) {
-
-  
+  for (let testimonio of datos) {
     $(".containerTestimonios").append(`
     <div class="testimonio">
     <img src="${testimonio.imagen}"/>
@@ -15,4 +11,4 @@ for (let testimonio of datos) {
     <i class="iconoTesti fas fa-comment-dots"></i>
     </div>`);
   }
-})
+});

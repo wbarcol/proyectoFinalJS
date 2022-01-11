@@ -460,7 +460,7 @@ a:hover {
 
 .formulario__input {
   width: 100%;
-  background-color: #FFF;
+  background-color: #fff;
   border: 3px solid transparent;
   border-radius: 3px;
   height: 45px;
@@ -470,7 +470,7 @@ a:hover {
 }
 
 .formulario__input:focus {
-  border: 3px solid #0075FF;
+  border: 3px solid #0075ff;
   outline: none;
   box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
 }
@@ -560,7 +560,7 @@ a:hover {
   }
 
   .formulario__mensaje,
-.formulario__grupo-btn-enviar {
+  .formulario__grupo-btn-enviar {
     grid-column: span 1;
   }
 
